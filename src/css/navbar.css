@@ -1,0 +1,164 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to right, #050505, #0c0c0c);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  border-bottom: 1px solid rgba(255,0,0,.3);
+  backdrop-filter: blur(10px);
+}
+
+/* ===== Logo ===== */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left img {
+  height: 45px;
+  width: 100px;
+  filter: drop-shadow(0 0 10px red);
+  border-radius: 30%;
+}
+
+.nav-left img:hover {
+      /* box-shadow: 0 0 30px red; */
+  transform: scale(1.1);
+
+}
+
+/* ===== Links ===== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #cfcfcf;
+  font-weight: 600;
+  position: relative;
+  transition: .3s;
+  letter-spacing: 1px;
+}
+
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: red;
+  left: 0;
+  bottom: -8px;
+  transition: .3s;
+}
+
+.nav-right a:hover {
+  color: white;
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+/* ===== Join Button ===== */
+.join-btn {
+  padding: 10px 26px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff0000, #ff4d4d);
+  color: white !important;
+  box-shadow: 0 0 15px red;
+}
+
+.join-btn:hover {
+  box-shadow: 0 0 30px red;
+  transform: scale(1.1);
+}
+
+/* ===== Mobile ===== */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: red;
+  cursor: pointer;
+}
+
+/* ===== Dashboard Dropdown ===== */
+.dropdown {
+  position: relative;
+  color: #ccc;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dropdown span {
+  padding: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: black;
+  border: 1px solid red;
+  border-radius: 12px;
+  min-width: 170px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 0 40px red;
+  z-index: 999;
+}
+
+.dropdown-menu.open {
+  display: flex;
+}
+
+.dropdown-menu a {
+  padding: 12px 20px;
+  color: #ccc;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.dropdown-menu a:hover {
+  background: red;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+
+/* ===== Responsive ===== */
+@media(max-width:768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: black;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    display: none;
+    border-left: 2px solid red;
+  }
+
+  .nav-right.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
