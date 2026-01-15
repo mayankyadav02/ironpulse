@@ -4,7 +4,7 @@ import "../css/plans.css"
 export default function Plans() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className="plans-page">
         <h1>Choose Your Power</h1>

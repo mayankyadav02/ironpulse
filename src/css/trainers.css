@@ -1,7 +1,7 @@
 .trainers-page {
   min-height: 100vh;
   padding: 120px 8%;
-  background: radial-gradient(circle at top, #111, #000 80%);
+  /* background: radial-gradient(circle at top, #111, #000 80%); */
   text-align: center;
 }
 

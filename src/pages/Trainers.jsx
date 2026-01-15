@@ -7,7 +7,7 @@ import t3 from "../assets/images/trainer3.jpg"
 export default function Trainers() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className="trainers-page">
         <h1>Meet Our Coaches</h1>
