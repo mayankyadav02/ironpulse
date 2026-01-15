@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import "../css/auth.css"
-import logo from "../assets/images/logo.png"
+import logo from "../../public/images/logo.png"
 
 export default function Register() {
   return (

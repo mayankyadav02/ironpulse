@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* Background Video */}
       <video autoPlay muted loop className="bg-video">
-        <source src="/src/assets/videos/workout.mp4" type="video/mp4" />
+        <source src="/public/videos/workout.mp4" type="video/mp4" />
       </video>
 
       {/* Hero Section */}
@@ -75,22 +75,22 @@ export default function Home() {
 
   <div className="gallery-grid">
     <div className="gallery-item">
-      <img src="/src/assets/images/trans1.jpg" />
+      <img src="/public/images/trans1.jpg" />
       <span>12 Weeks</span>
     </div>
 
     <div className="gallery-item">
-      <img src="/src/assets/images/trans2.jpg" />
+      <img src="/public/images/trans2.jpg" />
       <span>8 Weeks</span>
     </div>
 
     <div className="gallery-item">
-      <img src="/src/assets/images/trans3.jpg" />
+      <img src="/public/images/trans3.jpg" />
       <span>16 Weeks</span>
     </div>
 
     <div className="gallery-item">
-      <img src="/src/assets/images/trans4.jpg" />
+      <img src="/public/images/trans4.jpg" />
       <span>10 Weeks</span>
     </div>
   </div>

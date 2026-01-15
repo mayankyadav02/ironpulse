@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar"
 import "../css/trainers.css"
-import t1 from "../assets/images/trainer1.jpg"
-import t2 from "../assets/images/trainer2.jpg"
-import t3 from "../assets/images/trainer3.jpg"
+import t1 from "../../public/images/trainer1.jpg"
+import t2 from "../../public/images/trainer2.jpg"
+import t3 from "../../public/images/trainer3.jpg"
 
 export default function Trainers() {
   return (
